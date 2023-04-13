@@ -8,12 +8,12 @@
 
 #define SERVO_CAN_ID 	 1   //[DO NOT MODIFY]  Address of mbed/servo CAN device
 #define SENSOR_CAN_ID    2   //[DO NOT MODIFY]  Address of mbed/sensor CAN device
-#define CONTROL_CAN_ID   3   //[DO NOT MODIFY]  Address of THIS mbed device
+#define CONTROL_CAN_ID   3   //[DO NOT MODIFY]  Address of mbed/controller CAN device
 
 Serial pc(USBTX, USBRX);    //tx, and rx for tera term
 CAN can(p30,p29); 		    //[DO NOT MODIFY]  Set CAN Interface (assume using pins p30 and p29).
 				
-Timer tlog;			        //[DO NOT MODIFY]  This is a time you can use
+Timer tlog;			        //[DO NOT MODIFY]  This is a timer you can use to regulate duration of attack
 
 /*************************************************************
 [OPTIONAL]  Declare and initialize any variables and 
